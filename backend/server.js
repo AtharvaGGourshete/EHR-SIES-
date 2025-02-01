@@ -11,7 +11,7 @@ app.use(cors());
 // MongoDB Connection
 mongoose
   .connect(
-    "mongodb+srv://edlyelearning:aj9qkd12IFe0FMk2@cluster0.zs7zk.mongodb.net/ehr",
+    process.env.MONGO_URI,
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
